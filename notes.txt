@@ -1,0 +1,85 @@
+hoe selecteer je de juiste tool?
+hoe maak je een framework bruikbaar voor een team?
+	onderhoudbaar, flexibel, robuust en herbruikbaar
+hoe zorg je dat de kwaliteit van je framework/code/testontwerp goed blijft?
+hoe geef je een framework vorm?
+hoe selecteer je relevante testcases?
+	op basis van risicoklasse en testzwaarte uit je master test plan
+	doel is zo snel en simpel mogelijk een zo groot mogelijke dekking te bereiken. Dekking is de verhouding tussen datgene wat getest kan worden en datgene wat met de testset getest wordt. 
+	Prioriteit bepaal je aan de hand van je doel. 
+	Richt je op de samenhang tussen delen van het systeem, omdat hier de kans op regressie het grootst is. Integratietesten en happy-flow testen hebben de voorkeur boven foutafhandelingssituaties. Je kunt de risicoklasering uit de PRA gebruiken.
+Testgevallen zelf classificeren!
+	niet alles, ROI
+	Automation Plan
+	Automation Design
+	Automation Execution & Defect Reporting
+	Maintenance & Enhancement
+hoe meet je de kwaliteit van je testautomatisering?
+sneller, blijer, goedkoper, beter
+
+wat gaat hier mis vragen stellen?
+
+
+
+playwright teste voor unit, component, GUI test
+installatie instructies VSCode en Cypress opsturen
+bing inloggen met letsconnect account voor chatgpt 4.0
+
+
+
+installatie:
+install Visual Studio Code en Node.js
+in VSCode, installeer de plugin voor Playwright Test for VSCode
+
+open Visual Studio Code als admin
+open een folder waar je in wilt werken bv C:/repos
+open een terminal in VSCode (Terminal > New Terminal)
+voer deze commands uit:
+npm init playwright@latest
+npx playwright test --ui
+
+
+eerste tests
+	unit test
+	api test
+	e2e test
+	component test?
+	accessability test?
+login
+meerdere omgevingen
+POM
+login hergebruiken
+tags
+test report
+screenshots
+
+
+nb, voeg testIdAttribute: 'data-test' toe aan playwright.config.ts bij defineConfig > use
+
+Opdrachten
+01 - unit test
+Schrijf een unit test die onderstaande functie valideerd. 
+const addNumber = (a: number, b: number): number => a + b
+Gebruik de 'test' functie van playwright.
+
+02 - API test
+Schrifj een API test die naar google.com gaat en valideerd dat de request succesvol terugkomt.
+Gebruik de 'test' functie van playwright met het request object in de callbackfunctie. 
+
+0301 - Basic E2E test
+Schrijf een test die naar https://practicesoftwaretesting.com/ gaat. Vanhieruit naar de contact pagina navigeert. Valideer dat de pagina 'Contact' als title heeft dat de url op '/contact' eindigt.
+Gebruik de 'test' functie van playwright met het page object in de callbackfunctie. 
+
+0302 - Steps E2E test
+
+0303 - POM E2E test
+
+0304 - Components POM E2E test
+
+0305 - Test data in object
+
+0401 - Screenshots
+
+0402 - Tags
+
+05 - Setting up enviroments
